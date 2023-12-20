@@ -1,0 +1,71 @@
+@media (max-width : 992px) {
+    .btn{
+        display: none;
+    }
+    .banner {
+        height: 120vh;
+    }
+
+    .banner .row .bann_content h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+    .banner .row .bann_content p {
+        text-align: center;
+    }
+
+    .card_container .card {
+        width: calc(100% / 2 - 20px);
+        margin-top: 12px;
+    }
+    .about_text, .about_img{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .about_img .year{
+        bottom: 50px;
+    }
+    
+    
+}
+@media (max-width : 768px) {
+    .banner {
+        height: 200vh;
+    }
+    .service .card_container .card {
+        width: 100%;
+    }
+    .about_img .year{
+        bottom: 30px;
+        padding: 10px;
+    }
+    .about_img .year h2{
+        font-size: 50px;
+    }
+    .choose_btn li {
+        width: 100%;
+    }
+    .about_text {
+        padding: 20px 10px;
+    }
+    
+}
+@media (max-width : 575px) {
+    .about_img .year{
+        left: 30%;
+    }
+
+}
+
+@media (max-width : 320px) {
+    .banner {
+        height: 170vh;
+    }
+    .about_img .year{
+        left: 20%;
+    }
+    .about_img .year h2{
+        font-size: 30px;
+    }
+    
+}

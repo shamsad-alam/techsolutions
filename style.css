@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 h4,
+h5,
+h6 {
+    font-family: dosis, sans-serif;
+    font-weight: 900;
+
+}
+
+nav {
+    background-color: white;
+    box-shadow: 5px 0 10px gray;
+    position: absolute;
+}
+
+.container {
+    padding: 15px 0;
+}
+
+.container .navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav .container .collapse .navbar-nav {
+    display: flex;
+    margin: auto;
+}
+
+nav .container .collapse .navbar-nav li a {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+nav .navbar-nav .nav-item a:hover {
+    color: rgb(110, 84, 255);
+}
+
+nav .container .dropdown-menu {
+    padding: 0;
+}
+
+nav .container .dropdown-menu li {
+    width: 200px;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+nav .container .dropdown-menu li a {
+    padding: 8px 20px;
+}
+
+nav .container .dropdown-menu li a:hover {
+    background-color: rgb(110, 84, 255);
+    color: white;
+}
+
+.btn {
+    background-color: rgb(110, 84, 255);
+    padding: 12px 30px;
+    font-weight: bold;
+    color: white;
+    margin-right: 20px;
+}
+
+/*================================== BANNER SECTION START ============================*/
+/*================================== BANNER SECTION START ============================*/
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #370b6f, #00429b, #006dba, #0095ce, #2dbcdc);
+    position: relative;
+    z-index: 1;
+}
+
+.banner .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .row .bann_content h1 {
+    font-size: 68px;
+    margin: 20px 0;
+    font-weight: 700;
+    color: white;
+}
+
+.banner .row .bann_content p {
+    color: white;
+    margin: 30px 0;
+    line-height: 30px;
+}
+
+.banner .row img {
+    width: 90%;
+    margin-top: 50px;
+}
+
+
+.banner .bann_bottom_img {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.banner .bann_bottom_img img {
+    width: 100%;
+}
+
+/*================================== SERVICE SECTION START ============================*/
+/*================================== SERVICE SECTION START ============================*/
+
+.service {
+    padding: 80px 0;
+}
+
+.section-title {
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.section-title h6 {
+    color: #ff9800;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.section-title h1 {
+    color: #404040;
+}
+
+.service .card_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px 0;
+}
+
+.card_container .card {
+    width: calc(100% / 3 - 20px);
+    justify-content: center;
+    padding: 30px;
+    box-shadow: 5px 5px 10px rgb(225, 225, 225);
+    border: none;
+    animation: cardup ease-in;
+
+}
+
+.card_container .card:hover img {
+    transform: scaleX(-1);
+}
+
+.card_container .card img {
+    width: 50px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.card_container .card p,
+a {
+    padding: 10px 0;
+    line-height: 28px;
+    text-decoration: none;
+    margin: 0;
+    color: #626262;
+}
+
+.card_container .card a,
+i {
+    text-decoration: none;
+    margin: 0px;
+    font-weight: 600;
+    color: rgb(110, 84, 255);
+    padding: 0 5px;
+}
+
+
+/*================================== ABOUT SECTION START ============================*/
+/*================================== ABOUT SECTION START ============================*/
+.about {
+    padding: 80px 0;
+    background-color: #f7f8f8;
+}
+
+.about .about_body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about_text {
+    padding-right: 25px;
+}
+
+.about_text>h6 {
+    color: #ff9800;
+    letter-spacing: 1px;
+}
+
+.about_text h1 {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 55px;
+}
+
+.about_text p {
+    padding: 10px 0;
+    line-height: 30px;
+    color: #626262;
+
+}
+
+.progress_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress_text h6 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.about_text .progress {
+    height: 8px;
+    background-color: rgb(219, 219, 253);
+    margin-bottom: 25px;
+
+}
+
+.about_text .progress .progress-bar {
+    background-color: rgb(110, 84, 255);
+}
+
+.about_img {
+    position: relative;
+    text-align: center;
+}
+
+.about_img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about_img .year {
+    position: absolute;
+    left: 35%;
+    bottom: 20px;
+    width: 200px;
+    height: fit-content;
+    border-bottom: 3px solid #ff9800;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.about_img .year h2 {
+    font-size: 60px;
+    background: url(./image/about\ company.jpg);
+    background-position: 50% 50%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about_img .year h6 {
+    color: #ff9800;
+}
+
+
+/*================================== CHOOSE-US SECTION START ============================*/
+/*================================== CHOOSE-US SECTION START ============================*/
+
+.choose_us {
+    padding: 80px 0;
+}
+
+.choose_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.choose_btn li {
+    width: calc(100% / 2 - 10px);
+    box-shadow: 0 0 10px rgb(225, 225, 225);
+    list-style: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border-left: 3px solid rgb(110, 84, 255);
+    position: relative;
+    overflow: hidden;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.choose_btn li::before {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(110, 84, 255);
+    border-radius: 5px;
+    transition: 0.3s ease-in;
+    visibility: hidden;
+    z-index: -1;
+}
+
+.choose_btn li:hover::before {
+    visibility: visible;
+    left: 0;
+}
+.choose_btn li:hover{
+    color: white;
+}
+
+
+/*================================== CHOOSE-US SECTION START ============================*/
+/*================================== CHOOSE-US SECTION START ============================*/
+
+.trust_us {
+    padding: 50px 0 80px 0;
+}
+
+
+/*================================== COUNTER-AREA SECTION START ============================*/
+/*================================== COUNTER-AREA SECTION START ============================*/
+
+.counter_area {
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+    background: url(./image/counterimg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.counter_body{
+    color: white;
+}
+.counter_area .card_text{
+    text-align: center;
+}
+
+/*================================== TESTIMONIAL SECTION START ============================*/
+/*================================== TESTIMONIAL SECTION START ============================*/
+
+.testimonial {
+    padding: 80px 0;
+}
+
+.testi_title{
+    text-align: center;
+}
+.testi_title h6{
+    color: #ff9800;
+    font-weight: bold;
+}
+.team{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    position: relative;
+}
+/* .team .link{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+} */
+.team .link h3{
+   
+    color: rgb(225, 11, 11);
+}
+.team .card img{
+    object-fit: cover;
+    border-radius: 5px;
+}
+.team .card p{
+    color: rgb(110, 84, 255);
+}
