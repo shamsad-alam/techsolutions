@@ -1,7 +1,8 @@
 @media (max-width : 992px) {
-    .btn{
+    .btn {
         display: none;
     }
+
     .banner {
         height: 120vh;
     }
@@ -10,6 +11,7 @@
         font-size: 50px;
         text-align: center;
     }
+
     .banner .row .bann_content p {
         text-align: center;
     }
@@ -18,54 +20,110 @@
         width: calc(100% / 2 - 20px);
         margin-top: 12px;
     }
-    .about_text, .about_img{
+
+    .about_text,
+    .about_img {
         width: 100%;
         padding-top: 20px;
     }
-    .about_img .year{
+
+    .about_img .year {
         bottom: 50px;
     }
-    
-    
+
+    .subscribe form input{
+        height: 2.8rem;
+    }
+    .subscribe form button{
+        padding: 5px 10px;
+    }
+
+
 }
+
 @media (max-width : 768px) {
     .banner {
         height: 200vh;
     }
+
     .service .card_container .card {
         width: 100%;
     }
-    .about_img .year{
+
+    .about_img .year {
         bottom: 30px;
         padding: 10px;
     }
-    .about_img .year h2{
+
+    .about_img .year h2 {
         font-size: 50px;
     }
+
     .choose_btn li {
         width: 100%;
     }
+
     .about_text {
         padding: 20px 10px;
     }
-    
+
+    .contact {
+        padding: 50px 0px 0px;
+    }
+
+    .contact_body {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .subscribe form input{
+        height: 3rem;
+    }
+    .footer_area .link i{
+        width: 35px;
+        height: 35px;
+        line-height: 15px;
+        font-size: 16px;
+    }
+
 }
+
 @media (max-width : 575px) {
-    .about_img .year{
+    .about_img .year {
         left: 30%;
     }
 
+    .contact_body {
+        width: 90%;
+    }
+    .subscribe form button{
+        position: relative;
+        width: 100%;
+        border-radius: 8px;
+        margin-top: 20px;
+        padding: 10px 0;
+    }
+    .copyright{
+        display: block;
+    }
+    .copyright p{
+        font-size: 14px;
+        text-align: center;
+        padding: 5px 0;
+    }
 }
 
 @media (max-width : 320px) {
     .banner {
         height: 170vh;
     }
-    .about_img .year{
+
+    .about_img .year {
         left: 20%;
     }
-    .about_img .year h2{
+
+    .about_img .year h2 {
         font-size: 30px;
     }
-    
+
 }
