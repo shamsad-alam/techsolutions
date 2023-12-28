@@ -125,6 +125,13 @@ nav .container .dropdown-menu li a:hover {
     width: 100%;
 }
 
+.btn a{
+    color: white;
+}
+.btn a:hover{
+    color: rgb(110, 84, 255);
+}
+
 /*================================== SERVICE SECTION START ============================*/
 /*================================== SERVICE SECTION START ============================*/
 
@@ -503,6 +510,9 @@ i {
     margin: 20px 0;
     letter-spacing: 1px;
 }
+.contact_body .btn_sec a{
+    color: white;
+}
 
 
 /*================================== CUSTOMER SECTION START ============================*/
@@ -612,15 +622,15 @@ footer::after{
     font-size: 16px;
 }
 .footer_area .link i{
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     background-color: white;
-    padding: 12px 10px;
+    padding: 10px 6px;
     border-radius: 10px;
-    font-size: 22px;
+    font-size: 20px;
     margin-right: 10px;
     text-align: center;
-    line-height: 20px;
+    line-height: 15px;
     transition: 0.3s;
 }
 .footer_area .link i:hover{
